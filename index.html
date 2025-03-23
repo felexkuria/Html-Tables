@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="This is a class assigment for the web development class"
+    />
+    <meta
+      name="keywords"
+      content="HTML, CSS, JavaScript, Web Development, Class Assigment"
+    />
+    <meta name="author" content="Felex Kuria" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- Add Quicksand font from goo gle fonts -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+    />
+
+    <title>Class Assigment</title>
+  </head>
+
+  <body>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="#ordered-section">Contact</a></li>
+      </ul>
+    </nav>
+    <main>
+      <section class="#ordered-section">
+        <h1>Class Assigment</h1>
+        <h2>Welcome to the class assigment</h2>
+      </section>
+      <section>
+        <h2>What we are going to learn</h2>
+        <!-- Add an ordered list with roman numerals -->
+        <div class="ordered-list">
+          <ol type="I">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+          </ol>
+        </div>
+        <!-- Apply multimedia elements such as audio and video. -->
+        <div class="multimedia-container">
+          <audio controls>
+            <source
+              src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+              type="audio/mpeg"
+            />
+            Your browser does not support the audio element.
+          </audio>
+          <video width="320" height="240" controls>
+            <source
+              src="https://www.w3schools.com/html/movie.mp4"
+              type="video/mp4"
+            />
+            Your browser does not support the video tag.
+          </video>
+          <!-- Add an external image from pexels.com -->
+          <img
+            src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+            alt="Web Development"
+          />
+        </div>
+
+        <!-- Add a table of 5 contacts with; name, address, mobile and emails -->
+        <div class="table-container">
+          <table border="8">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Address</th>
+                <th>Mobile</th>
+                <th>Email</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>John Doe</td>
+                <td>123 Main St</td>
+                <td>555-0123</td>
+                <td>john@example.com</td>
+              </tr>
+              <tr>
+                <td>Jane Smith</td>
+                <td>456 Oak Ave</td>
+                <td>555-0124</td>
+                <td>jane@example.com</td>
+              </tr>
+              <tr>
+                <td>Bob Wilson</td>
+                <td>789 Pine Rd</td>
+                <td>555-0125</td>
+                <td>bob@example.com</td>
+              </tr>
+              <tr>
+                <td>Mary Johnson</td>
+                <td>321 Elm St</td>
+                <td>555-0126</td>
+                <td>mary@example.com</td>
+              </tr>
+              <tr>
+                <td>Steve Brown</td>
+                <td>654 Maple Dr</td>
+                <td>555-0127</td>
+                <td>steve@example.com</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- Designing a registration form with validation attributes -->
+        <form action="submit" class="form">
+          <div class="form-container">
+            <label for="name">Name:</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Enter your name"
+              required
+            />
+          </div>
+          <div class="form-container">
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter your email"
+              required
+            />
+          </div>
+          <div class="form-container">
+            <label for="password">Password:</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Enter your password"
+              required
+            />
+          </div>
+          <div class="form-container">
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required />
+          </div>
+          <div class="form-container">
+            <label for="dropdown">Dropdown:</label>
+            <select id="dropdown" name="dropdown">
+              <option value="1">Option 1</option>
+              <option value="2">Option 2</option>
+              <option value="3">Option 3</option>
+            </select>
+          </div>
+          <div class="form-container">
+            <label for="radio">Radio:</label>
+            <input type="radio" id="radio" name="radio" value="1" />
+            <input type="radio" id="radio" name="radio" value="2" />
+            <input type="radio" id="radio" name="radio" value="3" />
+          </div>
+          <div class="form-container">
+            <label for="checkbox">Checkbox:</label>
+            <input type="checkbox" id="checkbox" name="checkbox" value="1" />
+            <input type="checkbox" id="checkbox" name="checkbox" value="2" />
+            <input type="checkbox" id="checkbox" name="checkbox" value="3" />
+          </div>
+          <div class="form-container">
+            <input type="submit" value="Submit" />
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2021 Felex Kuria</p>
+    </footer>
+  </body>
+</html>
